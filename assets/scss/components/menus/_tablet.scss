@@ -1,0 +1,161 @@
+@media screen and (min-width: 981px) {
+
+    #menu-main-menu {
+        float: right;
+        margin-right: 20px;
+        text-align: right;
+        border-bottom-left-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
+
+        position: relative;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 9;
+        padding: 0;     
+        overflow: visible;
+        ul {
+            margin-top:0;
+        }
+        li {
+            float: left;
+            position: relative;
+            margin-left: 20px;
+
+            &:hover, &:focus {
+                // background: ;
+            }
+
+            a {
+                color: black;
+                &:hover, &:focus {
+                    color: black;
+                }
+            }
+
+            // Column Settings
+            &.menu-2-col,
+            &.menu-3-col,
+            &.menu-4-col {
+                border-radius: 0;
+            }
+
+            &.menu-2-col {
+                .sub-menu {
+                    width: 300px;
+                    .submenu-title {
+                        float: left;
+                        width: 50%;
+                    }   
+                    .sub-menu {
+                        width: 100%;
+                    }           
+                }
+            }
+            &.menu-3-col {
+                .sub-menu {
+                    width: 450px;
+                    .submenu-title {
+                        float: left;
+                        width: 33%;
+                    }
+                    .sub-menu {
+                        width: 100%;
+                    }               
+                }
+            }       
+            &.menu-4-col {
+                .sub-menu {
+                    width: 600px;
+                    .submenu-title {
+                        float: left;
+                        width: 25%;
+                    }
+                    .sub-menu {
+                        width: 100%;
+                    }
+                }
+            }       
+
+            /*
+            plan your menus and drop-downs wisely.
+            */
+            ul.sub-menu,
+            ul.children {
+                margin-top: 0;
+                // background: ;
+                position: absolute;
+                visibility: hidden;
+                z-index: 8999;
+                text-align: left;
+
+                .submenu-title {
+                    background: transparent;
+                    border-radius: 0;
+                    > a {
+                        padding-top: 12px;
+                        padding-bottom: 12px;
+                        border-bottom: 2px solid white;
+                    }
+                }
+
+                li {
+
+                    a {
+                        padding-left: 10px;
+                        display: block;
+                    }
+
+
+                    // sub sub menus
+                    ul {
+                        padding-top: 6px;
+                        padding-bottom: 2px;
+                        li {
+                            float: none;
+            
+                            &:hover, &:focus {
+                                text-decoration: underline;
+                                background: transparent;
+                            }
+                        }
+                    }
+                    &:first-child {
+                        ul {
+                            border-bottom-left-radius: $border-radius;
+                        }
+                    }
+                    &:last-child {
+                        ul {
+                            border-bottom-right-radius: $border-radius;
+                        }
+                    }               
+                }
+
+                /* highlight sub-menu current page */
+                li.current-menu-item,
+                li.current_page_item,
+                li.current_page_ancestor {
+                    a {}
+                }
+            }
+
+            /* showing sub-menus */
+            &:hover ul {
+                top: auto;
+                visibility:visible;
+            }
+
+        } /* end .menu ul li */
+
+        /* highlight current page */
+        li.current-menu-item,
+        li.current_page_item,
+        li.current_page_ancestor {
+            a {}
+        }  /* end current highlighters */
+
+    } /* end #main-menu */
+
+} // end min-width 981px nav

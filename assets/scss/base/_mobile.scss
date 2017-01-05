@@ -1,0 +1,54 @@
+.banner {
+  .banner__container {
+    @include container();
+  }
+  .banner__row {
+    @include make-row();
+  }
+  .banner__logo {
+    @include make-column(10);
+    
+  }
+}
+// Mobile menu code all moved to components/menu/mobile.less
+// Main content area
+.main {
+  padding-bottom: 20px;
+  .page__wrap {
+    @include container();
+    @include clearfix();
+  }
+  .page__row {
+    @include make-row();
+    @include clearfix();
+  }
+  .page__columns {
+    @include make-column(12);
+  }
+}
+.content-info {
+  background-color: $brand;
+  color: white;
+  .footer__container {
+    @include container();
+  }
+  .footer__row {
+    @include make-row();
+  }
+  .footer__copyright {
+    @include make-column(12);
+  }
+  .footer__nav {
+    @include make-column(12);
+    ul {
+      padding-left: 0;
+    }
+    li {
+      display: inline;
+      margin-right: 2%;
+    }
+    a {
+      color: white;
+    }
+  }
+}

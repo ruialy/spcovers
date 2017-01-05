@@ -1,0 +1,89 @@
+{
+    "key": "group_53e350d41e22e",
+    "title": "Social Networks",
+    "fields": [
+        {
+            "key": "field_53e350ddcb813",
+            "label": "LinkedIn",
+            "name": "linkedin_link",
+            "prefix": "",
+            "type": "url",
+            "instructions": "Add your LinkedIn link",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_53e3510bbe225",
+            "label": "YouTube",
+            "name": "youtube_link",
+            "prefix": "",
+            "type": "url",
+            "instructions": "Add your YouTube link",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_547f3b0151d20",
+            "label": "Google +",
+            "name": "googleplus_link",
+            "prefix": "",
+            "type": "url",
+            "instructions": "Add your Google + link",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        },
+        {
+            "key": "field_547f3b0351d21",
+            "label": "Twitter",
+            "name": "twitter_link",
+            "prefix": "",
+            "type": "url",
+            "instructions": "Add your Twitter link",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-social-networks"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": ""
+}

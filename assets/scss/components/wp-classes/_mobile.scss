@@ -1,0 +1,50 @@
+// WordPress Generated Classes
+// http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+.aligncenter {
+  display: block;
+  margin: 12px auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.alignleft,
+.alignright {
+  margin-bottom: 12px;
+  max-width: 100%;
+  height: auto;
+}
+
+.alignnone {
+  @include img-responsive();
+}
+
+.alignnone img {
+  @include img-responsive();
+}
+
+figure.alignnone {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+  @include img-responsive();
+}
+
+.wp-caption {
+  max-width: 100%;
+  background: #eee;
+  padding: 5px;
+  /* images inside wp-caption */
+  img {
+    max-width: 100%;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  p.wp-caption-text {
+    font-size: 0.85em;
+    margin: 4px 0 7px;
+    text-align: center;
+  }
+}
+
+
+/* end .wp-caption */

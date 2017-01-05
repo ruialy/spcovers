@@ -1,0 +1,119 @@
+.page {
+    
+    .page__header {
+    
+        h1 {
+            font-size: 32px;
+            
+        }
+        
+    }
+    .page__builder {
+        
+        h2 {
+            
+            font-size: 24px;
+            
+        }
+        
+        h3 {
+            
+            font-size: 20px;
+            
+        }
+        
+        .two_column {
+            .wysiwyg_editor {
+                @include make-column(6);
+            }
+        }        
+        .third_two_thirds {
+            
+            .wysiwyg_editor:first-child {
+                @include make-column(4);
+            }
+            .wysiwyg_editor:last-child {
+                @include make-column(8);
+            }
+        }
+        
+        .two_thirds_third {
+            .wysiwyg_editor:first-child {
+                @include make-column(8);
+            }
+            .wysiwyg_editor:last-child {
+                @include make-column(4);
+            }
+        }
+        .three_column {
+            .wysiwyg_editor {
+                @include make-column(4);
+            }
+        }        
+        .four_column {
+            .wysiwyg_editor {
+                @include make-column(6);
+            }
+        }
+        .blockquote {
+            overflow: hidden;
+            .blockquote__inner {
+                @include make-column(8);
+                @include make-column-offset(2);
+            }
+        }
+        .accordion__wrapper {
+            .accordion__inner {
+                @include make-column(12);
+            }
+        }
+
+    }
+    
+    .bg-cols {
+        
+        .inner {
+            
+            min-height: 420px
+                            
+        }      
+        
+    }
+    
+    .newsletter {
+        
+        .gform_body {
+            
+            width: 90%;
+            float: left;
+            
+            input {
+             
+                border: 0;
+                
+            }
+            
+        }
+        
+        .gform_footer {
+            
+            width: 10%;
+            float: left;
+            text-align: left;
+            
+        }
+        
+    }
+    
+}
+
+.page-gallery {   
+    
+    
+    .page-gallery__item {
+        
+        @include make-column(3);
+        
+    }
+    
+}
