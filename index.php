@@ -1,4 +1,4 @@
-<?php get_template_part( 'templates/wrapper', 'header' ); ?>
+ <?php get_template_part( 'templates/wrapper', 'header' ); ?>
 
 <div class="page__columns">
 
